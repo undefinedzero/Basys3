@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Mon May 09 20:46:33 2016
+# Process ID: 12492
+# Log file: C:/Xilinx/1/project_lab6/project_lab6.runs/impl_1/lab6.vdi
+# Journal file: C:/Xilinx/1/project_lab6/project_lab6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab6.tcl -notrace

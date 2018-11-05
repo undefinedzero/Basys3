@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Wed May 11 20:44:51 2016
+# Process ID: 8688
+# Log file: C:/Xilinx/1/project_1ab7/project_1ab7.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Xilinx/1/project_1ab7/project_1ab7.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Xilinx/1/project_1ab7/project_1ab7.sim/sim_1/behav/xsim.dir/sim_lab7_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 75.887 ; gain = 0.000
+
+    while executing
+"webtalk_transmit -clientid 52619117 -regid "" -xml C:/Xilinx/1/project_1ab7/project_1ab7.sim/sim_1/behav/xsim.dir/sim_lab7_behav/webtalk/usage_statist..."
+    (file "C:/Xilinx/1/project_1ab7/project_1ab7.sim/sim_1/behav/xsim.dir/sim_lab7_behav/webtalk/xsim_webtalk.tcl" line 32)
+INFO: [Common 17-206] Exiting Webtalk at Wed May 11 20:44:59 2016...

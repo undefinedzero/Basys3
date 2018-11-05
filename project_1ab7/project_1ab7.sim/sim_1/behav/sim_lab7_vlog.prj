@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../project_1ab7.srcs/sources_1/new/lab7_datapath.v"
+verilog xil_defaultlib  "../../../project_1ab7.srcs/sources_1/new/lab7_fsm.v"
+verilog xil_defaultlib  "../../../project_1ab7.srcs/sources_1/new/lab7_top.v"
+verilog xil_defaultlib  "../../../project_1ab7.srcs/sim_1/new/sim_lab7.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

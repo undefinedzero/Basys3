@@ -1,0 +1,13 @@
+
+****** Webtalk v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/1/project_lab6/project_lab6.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 95.766 ; gain = 0.008
+
+    while executing
+"webtalk_transmit -clientid 4046228172 -regid "" -xml C:/Xilinx/1/project_lab6/project_lab6.hw/webtalk/usage_statistics_ext_labtool.xml -html C:/Xilinx..."
+    (file "C:/Xilinx/1/project_lab6/project_lab6.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Mon May 09 19:05:59 2016...

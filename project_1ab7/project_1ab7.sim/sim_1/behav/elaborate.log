@@ -1,0 +1,14 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 9fef0259a55d4ca39f48810934696e3c --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_lab7_behav xil_defaultlib.sim_lab7 xil_defaultlib.glbl -log elaborate.log 
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lab7_fsm
+Compiling module xil_defaultlib.lab7_datapath
+Compiling module xil_defaultlib.lab7_top
+Compiling module xil_defaultlib.sim_lab7
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_lab7_behav

@@ -1,0 +1,11 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/1/project_lab8/project_lab8.srcs/sources_1/new/lab8_DP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_DP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/1/project_lab8/project_lab8.srcs/sources_1/new/lab8_CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/1/project_lab8/project_lab8.srcs/sources_1/new/lab8_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/1/project_lab8/project_lab8.srcs/sim_1/new/sim_lab8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_lab8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/1/project_lab8/project_lab8.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
