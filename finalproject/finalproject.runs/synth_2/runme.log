@@ -1,0 +1,955 @@
+
+*** Running vivado
+    with args -log top_top.vds -m64 -mode batch -messageDb vivado.pb -source top_top.tcl
+
+
+****** Vivado v2014.4.1 (64-bit)
+  **** SW Build 1149489 on Thu Feb 19 16:20:35 MST 2015
+  **** IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source top_top.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir F:/vivadoproject/Project/project_display_module/project_vga_logo.cache/wt [current_project]
+# set_property parent.project_path F:/vivadoproject/Project/project_display_module/project_vga_logo.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/project_vga_logo/coe/elements.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/elements.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/elements123.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/image1.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/12.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/11.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/1.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci3.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci4.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/yinfu.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/zhihsi.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci4gai.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci3gai.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci4gai2.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci3gai2.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci3gai3.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci4gai3.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci4gai4.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/geci3gai4.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/2.coe
+# add_files F:/vivadoproject/Project/project_display_module/coe/3.coe
+# add_files -quiet F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/dcm_25m_synth_1/dcm_25m.dcp
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/dcm_25m_synth_1/dcm_25m.dcp]
+# add_files -quiet F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# add_files -quiet F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_2_synth_1/blk_mem_gen_2.dcp
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_2_synth_1/blk_mem_gen_2.dcp]
+# add_files -quiet F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+# add_files -quiet F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_3_synth_1/blk_mem_gen_3.dcp
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_3_synth_1/blk_mem_gen_3.dcp]
+# add_files -quiet F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_4_synth_1/blk_mem_gen_4.dcp
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_4_synth_1/blk_mem_gen_4.dcp]
+# add_files -quiet F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_5_synth_1/blk_mem_gen_5.dcp
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_5_synth_1/blk_mem_gen_5.dcp]
+# read_verilog -library xil_defaultlib {
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/debounce.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/debounce.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/vga_timing.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Move.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/FSM.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/button.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Top.v
+#   F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/new/top_top.v
+# }
+# read_xdc F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc
+# set_property used_in_implementation false [get_files F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc]
+# catch { write_hwdef -file top_top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top_top -part xc7a35tcpg236-1
+Command: synth_design -top top_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -31 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 243.105 ; gain = 49.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_top' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/new/top_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'Top' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Top.v:23]
+INFO: [Synth 8-638] synthesizing module 'Move' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Move.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter START1 bound to: 4'b0001 
+	Parameter ADD1 bound to: 4'b0010 
+	Parameter ACK1 bound to: 4'b0011 
+	Parameter ADD2 bound to: 4'b0100 
+	Parameter ACK2 bound to: 4'b0101 
+	Parameter START2 bound to: 4'b0110 
+	Parameter ADD3 bound to: 4'b0111 
+	Parameter ACK3 bound to: 4'b1000 
+	Parameter DATA bound to: 4'b1001 
+	Parameter ACK4 bound to: 4'b1010 
+	Parameter STOP1 bound to: 4'b1011 
+	Parameter STOP2 bound to: 4'b1100 
+	Parameter ADD_EXT bound to: 4'b1101 
+	Parameter ACK_EXT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'Move' (1#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Move.v:23]
+WARNING: [Synth 8-350] instance 'Mover' of module 'Move' requires 10 connections, but only 9 given [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Top.v:49]
+INFO: [Synth 8-638] synthesizing module 'Sound_Gen' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:23]
+	Parameter Do bound to: 341296 - type: integer 
+	Parameter Re bound to: 303030 - type: integer 
+	Parameter Mi bound to: 270270 - type: integer 
+	Parameter Fa bound to: 255102 - type: integer 
+	Parameter So bound to: 227272 - type: integer 
+	Parameter La bound to: 202429 - type: integer 
+	Parameter Si bound to: 180505 - type: integer 
+	Parameter No bound to: 1000000000 - type: integer 
+WARNING: [Synth 8-3848] Net Note[510][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[509][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[508][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[507][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[506][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[505][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[504][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[503][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[502][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[501][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[500][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[499][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[498][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[497][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[496][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[495][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[494][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[493][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[492][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[491][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[490][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[489][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[488][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[487][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[486][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[485][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[484][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[483][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[482][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[481][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[480][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[479][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[478][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[477][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[476][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[475][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[474][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[473][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[472][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[471][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[470][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[469][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[468][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[467][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[466][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[465][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[464][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[463][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[462][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[461][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[460][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[459][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[458][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[457][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[456][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[455][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[454][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[453][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[452][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[451][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[450][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[449][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[448][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[447][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[446][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[445][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[444][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[443][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[442][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[441][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[440][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[439][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[438][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[437][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[436][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[435][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[434][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[433][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[432][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[431][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[430][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[429][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[428][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[427][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[426][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[425][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[424][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[423][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[422][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[421][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[420][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[419][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[418][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[417][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[416][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[415][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[414][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[413][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[412][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+WARNING: [Synth 8-3848] Net Note[411][3] in module/entity Sound_Gen does not have driver. [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:31]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'Sound_Gen' (2#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'FSM' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/FSM.v:23]
+	Parameter Gap bound to: 32'b00000010111110101111000010000000 
+INFO: [Synth 8-256] done synthesizing module 'FSM' (3#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/FSM.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/debounce.v:23]
+	Parameter Max bound to: 650000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (4#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/debounce.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Top' (5#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/Top.v:23]
+INFO: [Synth 8-638] synthesizing module 'top_flyinglogo' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:4]
+	Parameter logo_length bound to: 10'b0111011010 
+	Parameter logo_length1 bound to: 10'b0111011010 
+	Parameter logo_length2 bound to: 10'b0000011110 
+	Parameter logo_hight bound to: 10'b0101110101 
+	Parameter logo_hight1 bound to: 10'b0110001101 
+	Parameter logo_hight2 bound to: 10'b0000011110 
+	Parameter logo_length3 bound to: 10'b0000011110 
+	Parameter logo_hight3 bound to: 10'b0000000101 
+	Parameter logo_length4 bound to: 10'b0000110010 
+	Parameter logo_hight4 bound to: 10'b0000110010 
+INFO: [Synth 8-638] synthesizing module 'button' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/button.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce1' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/debounce.v:23]
+	Parameter NDELAY bound to: 650000 - type: integer 
+	Parameter NBITS bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce1' (6#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/debounce.v:23]
+INFO: [Synth 8-256] done synthesizing module 'button' (7#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/button.v:23]
+INFO: [Synth 8-638] synthesizing module 'dcm_25m' [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/dcm_25m_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dcm_25m' (8#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/dcm_25m_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_1_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (9#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_1_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (10#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_2_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (11#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_2_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_3_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_3' (12#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_3_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_4_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_4' (13#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_4_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_5' [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_5_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_5' (14#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/realtime/blk_mem_gen_5_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/vga_timing.v:4]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (15#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/vga_timing.v:4]
+INFO: [Synth 8-256] done synthesizing module 'top_flyinglogo' (16#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:4]
+INFO: [Synth 8-256] done synthesizing module 'top_top' (17#1) [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/new/top_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 293.410 ; gain = 99.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 293.410 ; gain = 99.445
+---------------------------------------------------------------------------------
+Loading clock regions from E:/vivadosu/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from E:/vivadosu/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from E:/vivadosu/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from E:/vivadosu/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from E:/vivadosu/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from E:/vivadosu/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from E:/vivadosu/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/dcp/dcm_25m_in_context.xdc] for cell 'f1/u0'
+Finished Parsing XDC File [F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/dcp/dcm_25m_in_context.xdc] for cell 'f1/u0'
+Parsing XDC File [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc]
+Finished Parsing XDC File [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.046 . Memory (MB): peak = 613.563 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-2920-csh-PC/dcp/dcm_25m_in_context.xdc, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Move'
+ROM "cnt" won't be mapped to RAM because it is too sparse.
+ROM "scl_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "sda_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "sda_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "sda_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "sda_r" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "sda_link" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "sda_link" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "ACC_XH_READ" won't be mapped to RAM because it is too sparse.
+ROM "times" won't be mapped to RAM because it is too sparse.
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "state" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "State1" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "State1" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "TMP1" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "TMP1" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "Steping" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "Steping" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "Steping" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "y_cnt" won't be mapped to RAM because it is too sparse.
+ROM "wave" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "wave" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+ROM "wave" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "wave" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Move'
+WARNING: [Synth 8-327] inferring latch for variable 'wave_reg' [F:/vivadoproject/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:144]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Sound_Gen__GB0 |           1|     33824|
+|2     |muxpart__54    |           1|     16997|
+|3     |muxpart__52    |           1|     16709|
+|4     |Top__GC0       |           1|      6617|
+|5     |top_flyinglogo |           1|      4473|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 70    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 15    
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 21    
+	  13 Input      8 Bit        Muxes := 8     
+	   7 Input      8 Bit        Muxes := 1     
+	  15 Input      8 Bit        Muxes := 9     
+	  14 Input      8 Bit        Muxes := 1     
+	  15 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	  15 Input      4 Bit        Muxes := 1     
+	  40 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 102   
+	   3 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_top 
+Detailed RTL Component Info : 
+Module Sound_Gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Move 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 20    
+	  13 Input      8 Bit        Muxes := 8     
+	   7 Input      8 Bit        Muxes := 1     
+	  15 Input      8 Bit        Muxes := 9     
+	  15 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  15 Input      4 Bit        Muxes := 1     
+	  40 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   3 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 12    
+Module FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+Module debounce__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module Top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module debounce1__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce1__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce1__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce1__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce1__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce1__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce1__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module top_flyinglogo 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "cnt" won't be mapped to RAM because it is too sparse.
+ROM "p_0_out" won't be mapped to RAM because address size (25) is larger than maximum supported(18) 
+ROM "p_0_out" won't be mapped to RAM because address size (25) is larger than maximum supported(18) 
+ROM "B1/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "B1/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "B2/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "B2/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "B3/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "B3/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "St/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "St/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "Pl/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "Pl/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "Mi/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "Mi/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "Little/count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "Little/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "y_cnt" won't be mapped to RAM because it is too sparse.
+ROM "b1/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b1/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b2/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b2/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b3/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b3/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b4/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b4/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b5/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b5/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b6/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b6/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b7/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b7/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b8/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b8/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+DSP Report: Generating DSP lift, operation Mode is: ((EDGE:1=>(C:0x31)) or (EDGE:0=>0))+(D+((InmodeCtrl[1]:0=>0) or (InmodeCtrl[1]:1=>(A:0x3ffffff7))))*(B:0x31).
+DSP Report: operator lift0 is absorbed into DSP lift.
+DSP Report: operator lift1 is absorbed into DSP lift.
+DSP Report: operator lift2 is absorbed into DSP lift.
+DSP Report: operator lift0 is absorbed into DSP lift.
+DSP Report: Generating DSP rom_rst1, operation Mode is: (D+(A:0x3ffffff8))*(B:0x1da).
+DSP Report: operator rom_rst1 is absorbed into DSP rom_rst1.
+DSP Report: operator rom_rst2 is absorbed into DSP rom_rst1.
+DSP Report: Generating DSP rom_rst0, operation Mode is: A*(B:0x31).
+DSP Report: operator rom_rst0 is absorbed into DSP rom_rst0.
+DSP Report: Generating DSP rom_rst10, operation Mode is: A*(B:0x31).
+DSP Report: operator rom_rst10 is absorbed into DSP rom_rst10.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 613.563 ; gain = 419.598
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Sound_Gen__GB0 |           1|     33888|
+|2     |muxpart__54    |           1|     16997|
+|3     |muxpart__52    |           1|     16709|
+|4     |Top__GC0       |           1|     10204|
+|5     |top_flyinglogo |           1|      7674|
++------+---------------+------------+----------+
+ Sort Area is top_flyinglogo rom_rst1_2 : 0 0 : 524 524 : Used 1 time 0
+ Sort Area is top_flyinglogo rom_rst0_4 : 0 0 : 314 314 : Used 1 time 0
+ Sort Area is top_flyinglogo rom_rst10_6 : 0 0 : 234 234 : Used 1 time 0
+ Sort Area is top_flyinglogo lift_0 : 0 0 : 190 190 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++---------------+--------------------------------------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping                                                                                                  | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+--------------------------------------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_flyinglogo | ((EDGE:1=>(C:0x31)) or (EDGE:0=>0))+(D+((InmodeCtrl[1]:0=>0) or (InmodeCtrl[1]:1=>(A:0x3ffffff7))))*(B:0x31) | No           | 5      | 6      | 6      | 4      | 10     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|top_flyinglogo | (D+(A:0x3ffffff8))*(B:0x1da)                                                                                 | No           | 5      | 9      | 48     | 4      | 27     | 0    | 0    | 1    | 0    | 0     | 0    | 0    | 
+|top_flyinglogo | A*(B:0x31)                                                                                                   | No           | 18     | 6      | 48     | 25     | 24     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|top_flyinglogo | A*(B:0x31)                                                                                                   | No           | 13     | 6      | 48     | 25     | 19     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++---------------+--------------------------------------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows DSPs generated at current stage. Some DSP generation could be reversed due to later optimizations. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 613.563 ; gain = 419.598
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Sound_Gen__GB0 |           1|     23958|
+|2     |muxpart__54    |           1|       611|
+|3     |muxpart__52    |           1|       636|
+|4     |Top__GC0       |           1|      4664|
+|5     |top_flyinglogo |           1|      3629|
++------+---------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 613.563 ; gain = 419.598
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:37 ; elapsed = 00:02:42 . Memory (MB): peak = 730.664 ; gain = 536.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 749.441 ; gain = 555.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Sound_Gen__GB0 |           1|     23958|
+|2     |muxpart__54    |           1|       611|
+|3     |muxpart__52    |           1|       636|
+|4     |Top__GC0       |           1|      5023|
+|5     |top_flyinglogo |           1|      3629|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 759.586 ; gain = 565.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:12 ; elapsed = 00:03:18 . Memory (MB): peak = 759.586 ; gain = 565.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:12 ; elapsed = 00:03:18 . Memory (MB): peak = 759.586 ; gain = 565.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:14 ; elapsed = 00:03:19 . Memory (MB): peak = 759.586 ; gain = 565.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dcm_25m       |         1|
+|2     |blk_mem_gen_1 |         1|
+|3     |blk_mem_gen_0 |         1|
+|4     |blk_mem_gen_2 |         1|
+|5     |blk_mem_gen_3 |         1|
+|6     |blk_mem_gen_4 |         1|
+|7     |blk_mem_gen_5 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |blk_mem_gen_2 |     1|
+|4     |blk_mem_gen_3 |     1|
+|5     |blk_mem_gen_4 |     1|
+|6     |blk_mem_gen_5 |     1|
+|7     |dcm_25m       |     1|
+|8     |BUFG          |     1|
+|9     |CARRY4        |   249|
+|10    |DSP48E1       |     1|
+|11    |DSP48E1_1     |     1|
+|12    |DSP48E1_2     |     2|
+|13    |INV           |     2|
+|14    |LUT1          |   169|
+|15    |LUT2          |   481|
+|16    |LUT3          |   355|
+|17    |LUT4          |   466|
+|18    |LUT5          |   520|
+|19    |LUT6          |   890|
+|20    |MUXCY_L       |   486|
+|21    |MUXF7         |    62|
+|22    |XORCY         |   508|
+|23    |FDCE          |   423|
+|24    |FDPE          |    40|
+|25    |FDRE          |   312|
+|26    |LDC           |     8|
+|27    |LDCP          |     1|
+|28    |IBUF          |     5|
+|29    |IOBUF         |     1|
+|30    |OBUF          |    24|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------+---------------+------+
+|      |Instance    |Module         |Cells |
++------+------------+---------------+------+
+|1     |top         |               |  5033|
+|2     |  f1        |top_flyinglogo |  1932|
+|3     |    b1      |button         |    73|
+|4     |      d1    |debounce1_19   |    71|
+|5     |    b2      |button_6       |    80|
+|6     |      d1    |debounce1_18   |    78|
+|7     |    b3      |button_7       |    87|
+|8     |      d1    |debounce1_17   |    85|
+|9     |    b4      |button_8       |    95|
+|10    |      d1    |debounce1_16   |    93|
+|11    |    b5      |button_9       |    73|
+|12    |      d1    |debounce1_15   |    71|
+|13    |    b6      |button_10      |    82|
+|14    |      d1    |debounce1_14   |    80|
+|15    |    b7      |button_11      |    79|
+|16    |      d1    |debounce1_13   |    77|
+|17    |    b8      |button_12      |   282|
+|18    |      d1    |debounce1      |   280|
+|19    |    u2      |vga_640x480    |   283|
+|20    |  t1        |Top            |  3068|
+|21    |    B1      |debounce       |   145|
+|22    |    B2      |debounce_0     |   144|
+|23    |    B3      |debounce_1     |   144|
+|24    |    Little  |debounce_2     |   147|
+|25    |    Mi      |debounce_3     |   146|
+|26    |    Mover   |Move           |   409|
+|27    |    MyFSM   |FSM            |  1469|
+|28    |    MySound |Sound_Gen      |   170|
+|29    |    Pl      |debounce_4     |   149|
+|30    |    St      |debounce_5     |   145|
++------+------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:14 ; elapsed = 00:03:20 . Memory (MB): peak = 759.586 ; gain = 565.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1265 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:02:58 . Memory (MB): peak = 759.586 ; gain = 218.594
+Synthesis Optimization Complete : Time (s): cpu = 00:03:14 ; elapsed = 00:03:20 . Memory (MB): peak = 759.586 ; gain = 565.621
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1262 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 140 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 128 instances
+  INV => LUT1: 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LDC => LDCE: 8 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:16 ; elapsed = 00:03:21 . Memory (MB): peak = 759.586 ; gain = 561.914
+# write_checkpoint -noxdef top_top.dcp
+# catch { report_utilization -file top_top_utilization_synth.rpt -pb top_top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.249 . Memory (MB): peak = 759.586 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 01 13:29:34 2016...

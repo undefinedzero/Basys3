@@ -1,0 +1,114 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4.1 (win64) Build 1149489 Thu Feb 19 16:20:35 MST 2015
+| Date         : Fri Jul 01 13:31:47 2016
+| Host         : csh-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_top_control_sets_placed.rpt
+| Design       : top_top
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    61 |
+| Minimum Number of register sites lost to control set restrictions |   282 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              69 |           38 |
+| No           | No                    | Yes                    |             133 |           73 |
+| No           | Yes                   | No                     |               8 |            8 |
+| Yes          | No                    | No                     |              12 |            7 |
+| Yes          | No                    | Yes                    |             330 |          101 |
+| Yes          | Yes                   | No                     |             254 |           67 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+------------------------------------------+-----------------------------------+------------------+----------------+
+|            Clock Signal            |               Enable Signal              |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++------------------------------------+------------------------------------------+-----------------------------------+------------------+----------------+
+|  t1/Little/n_0_newB_reg_LDC_i_1__5 |                                          | t1/Little/n_0_newB_reg_LDC_i_2__5 |                1 |              1 |
+|  t1/Mi/n_0_newB_reg_LDC_i_1__4     |                                          | t1/Mi/n_0_newB_reg_LDC_i_2__4     |                1 |              1 |
+|  f1/b4/d1/D[1]                     |                                          | f1/b8/d1/AR[0]                    |                1 |              1 |
+|  t1/Mover/O2                       |                                          | t1/Mover/O3                       |                1 |              1 |
+|  t1/Mover/O4                       |                                          | t1/Mover/O5                       |                1 |              1 |
+|  t1/Mover/O6                       |                                          | t1/Mover/O7                       |                1 |              1 |
+|  t1/Mover/O8                       |                                          | t1/Mover/O9                       |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O6                       |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mi/n_0_newB_reg_LDC_i_1__4     |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mi/n_0_newB_reg_LDC_i_2__4     |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O2                       |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O5                       |                1 |              1 |
+|  f1/wave_reg[0]/G0                 |                                          |                                   |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O3                       |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Pl/n_0_newB_reg_LDC_i_2__3     |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Pl/n_0_newB_reg_LDC_i_1__3     |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O9                       |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O4                       |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O8                       |                1 |              1 |
+|  t1/Pl/n_0_newB_reg_LDC_i_1__3     |                                          | t1/Pl/n_0_newB_reg_LDC_i_2__3     |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Mover/O7                       |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Little/O1                      |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Little/n_0_newB_reg_LDC_i_1__5 |                1 |              1 |
+|  clk_BUFG                          |                                          | t1/Little/n_0_newB_reg_LDC_i_2__5 |                1 |              1 |
+|  clk_BUFG                          | t1/Mover/n_0_num[3]_i_1                  | rst_IBUF                          |                3 |              4 |
+|  clk_BUFG                          | t1/Mover/n_0_FSM_sequential_state[3]_i_1 | rst_IBUF                          |                3 |              4 |
+|  f1/u0/inst/clk_out1               | f1/u2/O61[0]                             | f1/u2/O59                         |                1 |              4 |
+|  clk_BUFG                          | t1/Mover/xtv2_out                        |                                   |                3 |              4 |
+|  f1/u0/inst/clk_out1               | f1/u2/O14                                | f1/u2/O59                         |                2 |              4 |
+|  f1/u0/inst/clk_out1               | f1/u2/O1                                 | f1/u2/O59                         |                2 |              4 |
+|  clk_BUFG                          | t1/Mover/n_0_times[4]_i_1                | rst_IBUF                          |                2 |              5 |
+|  clk_BUFG                          | t1/Mover/n_0_db_r[7]_i_1                 |                                   |                4 |              8 |
+|  f1/u0/inst/clk_out1               | f1/u2/n_0_y_cnt[9]_i_1                   | rst_IBUF                          |                5 |             10 |
+|  f1/u0/inst/clk_out1               | f1/u2/E[0]                               | f1/u2/O65                         |                3 |             10 |
+|  f1/u0/inst/clk_out1               |                                          | rst_IBUF                          |                4 |             10 |
+|  f1/u0/inst/clk_out1               | f1/u2/O11                                | f1/u2/O65                         |                3 |             12 |
+|  f1/u0/inst/clk_out1               | f1/u2/O12                                | f1/u2/O65                         |                3 |             12 |
+|  f1/u0/inst/clk_out1               | f1/u2/O13                                | f1/u2/O65                         |                3 |             12 |
+|  f1/u0/inst/clk_out1               | f1/u2/O17                                | f1/b8/d1/O26                      |                5 |             18 |
+|  f1/u0/inst/clk_out1               | f1/u2/O15                                | f1/u2/O18                         |                5 |             18 |
+|  clk_BUFG                          | t1/MyFSM/n_0_State[9]_i_1                | t1/Little/O1                      |                8 |             19 |
+|  clk_BUFG                          | f1/b3/d1/n_0_count[0]_i_2__2             | f1/b3/d1/n_0_count[0]_i_1__8      |                5 |             20 |
+|  clk_BUFG                          | f1/b2/d1/n_0_count[0]_i_2__1             | f1/b2/d1/n_0_count[0]_i_1__7      |                5 |             20 |
+|  clk_BUFG                          | f1/b1/d1/n_0_count[0]_i_2__0             | f1/b1/d1/n_0_count[0]_i_1__6      |                5 |             20 |
+|  clk_BUFG                          | f1/b7/d1/n_0_count[0]_i_2__6             | f1/b7/d1/n_0_count[0]_i_1__12     |                5 |             20 |
+|  clk_BUFG                          | f1/b8/d1/n_0_count[0]_i_2__7             | f1/b8/d1/n_0_count[0]_i_1__13     |                5 |             20 |
+|  clk_BUFG                          | f1/b4/d1/n_0_count[0]_i_2__3             | f1/b4/d1/n_0_count[0]_i_1__9      |                5 |             20 |
+|  clk_BUFG                          | f1/b5/d1/n_0_count[0]_i_2__4             | f1/b5/d1/n_0_count[0]_i_1__10     |                5 |             20 |
+|  clk_BUFG                          | f1/b6/d1/n_0_count[0]_i_2__5             | f1/b6/d1/n_0_count[0]_i_1__11     |                5 |             20 |
+|  f1/u0/inst/clk_out2               |                                          |                                   |               11 |             22 |
+|  clk_BUFG                          | t1/B1/n_0_count[0]_i_1                   | rst_IBUF                          |                8 |             32 |
+|  clk_BUFG                          | t1/B1/E[0]                               | t1/Little/O1                      |               10 |             32 |
+|  clk_BUFG                          | t1/B2/n_0_count[0]_i_1__0                | rst_IBUF                          |                8 |             32 |
+|  clk_BUFG                          | t1/B3/n_0_count[0]_i_1__1                | rst_IBUF                          |                8 |             32 |
+|  clk_BUFG                          | t1/Little/n_0_count[0]_i_1__5            | rst_IBUF                          |                8 |             32 |
+|  clk_BUFG                          | t1/MyFSM/n_0_count[31]_i_1               | t1/Little/O1                      |               14 |             32 |
+|  clk_BUFG                          | t1/Pl/n_0_count[0]_i_1__3                | rst_IBUF                          |                8 |             32 |
+|  clk_BUFG                          | t1/St/n_0_count[0]_i_1__2                | rst_IBUF                          |                8 |             32 |
+|  clk_BUFG                          | t1/Mi/n_0_count[0]_i_1__4                | rst_IBUF                          |                8 |             32 |
+|  clk_BUFG                          |                                          |                                   |               26 |             46 |
+|  clk_BUFG                          |                                          | rst_IBUF                          |               54 |            108 |
++------------------------------------+------------------------------------------+-----------------------------------+------------------+----------------+
+
+

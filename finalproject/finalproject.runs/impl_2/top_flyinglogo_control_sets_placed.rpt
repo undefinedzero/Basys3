@@ -1,0 +1,71 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4.1 (win64) Build 1149489 Thu Feb 19 16:23:09 MST 2015
+| Date         : Mon Jun 13 19:24:51 2016
+| Host         : BILLLINC3DA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_flyinglogo_control_sets_placed.rpt
+| Design       : top_flyinglogo
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    18 |
+| Minimum Number of register sites lost to control set restrictions |    74 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           34 |
+| No           | No                    | Yes                    |              10 |            6 |
+| No           | Yes                   | No                     |              46 |           17 |
+| Yes          | No                    | No                     |              36 |           10 |
+| Yes          | No                    | Yes                    |              10 |            5 |
+| Yes          | Yes                   | No                     |             178 |           44 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------+---------------------------+---------------------------+------------------+----------------+
+|    Clock Signal   |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------+---------------------------+---------------------------+------------------+----------------+
+|  u0/inst/clk_out1 | u2/O20[0]                 | u2/O30[0]                 |                1 |              4 |
+|  u0/inst/clk_out1 | u2/O25                    | u2/O30[0]                 |                1 |              4 |
+|  u0/inst/clk_out1 |                           | rst_IBUF                  |                6 |             10 |
+|  u0/inst/clk_out1 | u2/n_0_y_cnt[9]_i_1       | rst_IBUF                  |                5 |             10 |
+|  u0/inst/clk_out1 | u2/E[0]                   | u2/SR[0]                  |                2 |             10 |
+|  u0/inst/clk_out1 | u2/O31                    |                           |                5 |             18 |
+|  u0/inst/clk_out1 | u2/O21                    |                           |                5 |             18 |
+|  clk_BUFG         | b3/d1/n_0_count[0]_i_2__1 | b3/d1/n_0_count[0]_i_1__1 |                5 |             20 |
+|  clk_BUFG         | b2/d1/n_0_count[0]_i_2__0 | b2/d1/n_0_count[0]_i_1__0 |                5 |             20 |
+|  clk_BUFG         | b1/d1/n_0_count[0]_i_2    | b1/d1/n_0_count[0]_i_1    |                5 |             20 |
+|  clk_BUFG         | b4/d1/n_0_count[0]_i_2__2 | b4/d1/n_0_count[0]_i_1__2 |                5 |             20 |
+|  clk_BUFG         | b5/d1/n_0_count[0]_i_2__3 | b5/d1/n_0_count[0]_i_1__3 |                5 |             20 |
+|  clk_BUFG         | b6/d1/n_0_count[0]_i_2__4 | b6/d1/n_0_count[0]_i_1__4 |                5 |             20 |
+|  clk_BUFG         | b7/d1/n_0_count[0]_i_2__5 | b7/d1/n_0_count[0]_i_1__5 |                5 |             20 |
+|  clk_BUFG         | b8/d1/n_0_count[0]_i_2__6 | b8/d1/n_0_count[0]_i_1__6 |                5 |             20 |
+|  u0/inst/clk_out2 |                           |                           |               11 |             22 |
+|  clk_BUFG         |                           |                           |               23 |             32 |
+|  line2_BUFG       |                           | rst_IBUF                  |               17 |             46 |
++-------------------+---------------------------+---------------------------+------------------+----------------+
+
+

@@ -1,0 +1,495 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Mon Jun 13 19:23:32 2016
+# Process ID: 11092
+# Log file: C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/top_flyinglogo.vds
+# Journal file: C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source top_flyinglogo.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Xilinx/1/Project/project_display_module/project_vga_logo.cache/wt [current_project]
+# set_property parent.project_path C:/Xilinx/1/Project/project_display_module/project_vga_logo.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/project_vga_logo/coe/elements.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/elements.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/elements123.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/image1.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/12.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/11.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/1.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci3.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci4.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/yinfu.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/zhihsi.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci4gai.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci3gai.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci4gai2.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci3gai2.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci3gai3.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci4gai3.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci4gai4.coe
+# add_files C:/Xilinx/1/Project/project_display_module/coe/geci3gai4.coe
+# add_files -quiet C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/dcm_25m_synth_1/dcm_25m.dcp
+# set_property used_in_implementation false [get_files C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/dcm_25m_synth_1/dcm_25m.dcp]
+# add_files -quiet C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# add_files -quiet C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_2_synth_1/blk_mem_gen_2.dcp
+# set_property used_in_implementation false [get_files C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_2_synth_1/blk_mem_gen_2.dcp]
+# add_files -quiet C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp
+# set_property used_in_implementation false [get_files C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/debounce.v
+#   C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/button.v
+#   C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/vga_timing.v
+#   C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v
+# }
+# read_xdc C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc
+# set_property used_in_implementation false [get_files C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc]
+# catch { write_hwdef -file top_flyinglogo.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top_flyinglogo -part xc7a35tcpg236-1
+Command: synth_design -top top_flyinglogo -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -13 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 243.191 ; gain = 69.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_flyinglogo' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:4]
+	Parameter logo_length bound to: 10'b0111011010 
+	Parameter logo_length1 bound to: 10'b0111011010 
+	Parameter logo_length2 bound to: 10'b0000011110 
+	Parameter logo_hight bound to: 10'b0101110101 
+	Parameter logo_hight1 bound to: 10'b0110001101 
+	Parameter logo_hight2 bound to: 10'b0000011110 
+	Parameter logo_length3 bound to: 10'b0000011110 
+	Parameter logo_hight3 bound to: 10'b0000000101 
+INFO: [Synth 8-638] synthesizing module 'button' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/button.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/debounce.v:23]
+	Parameter NDELAY bound to: 650000 - type: integer 
+	Parameter NBITS bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/debounce.v:23]
+INFO: [Synth 8-256] done synthesizing module 'button' (2#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/new/button.v:23]
+INFO: [Synth 8-638] synthesizing module 'dcm_25m' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/dcm_25m_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dcm_25m' (3#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/dcm_25m_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/blk_mem_gen_1_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (4#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/blk_mem_gen_1_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (5#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/blk_mem_gen_2_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (6#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/realtime/blk_mem_gen_2_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/vga_timing.v:4]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (7#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/vga_timing.v:4]
+INFO: [Synth 8-256] done synthesizing module 'top_flyinglogo' (8#1) [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 276.441 ; gain = 102.328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 276.441 ; gain = 102.328
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/dcp/dcm_25m_in_context.xdc] for cell 'u0'
+Finished Parsing XDC File [C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/dcp/dcm_25m_in_context.xdc] for cell 'u0'
+Parsing XDC File [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc]
+Finished Parsing XDC File [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/constrs_1/imports/sources/display_vga.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 580.379 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Xilinx/1/Project/project_display_module/project_vga_logo.runs/synth_2/.Xil/Vivado-11092-BILLLINC3DA/dcp/dcm_25m_in_context.xdc, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+ROM "count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "y_cnt" won't be mapped to RAM because it is too sparse.
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+WARNING: [Synth 8-327] inferring latch for variable 'lift_reg' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:219]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_rst_reg' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:218]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_rst1_reg' [C:/Xilinx/1/Project/project_display_module/project_vga_logo.srcs/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:220]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 5     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 5     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_flyinglogo 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module button 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "b1/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b1/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b2/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b2/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b3/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b3/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b4/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b4/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b5/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b5/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b6/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b6/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b7/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b7/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b8/d1/count" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "b8/d1/clean" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "u2/y_cnt" won't be mapped to RAM because it is too sparse.
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+DSP Report: Generating DSP lift, operation Mode is: ((EDGE:1=>(C:0x31)) or (EDGE:0=>0))+(D+((InmodeCtrl[1]:0=>0) or (InmodeCtrl[1]:1=>(A:0x3ffffff7))))*(B:0x31).
+DSP Report: operator lift0 is absorbed into DSP lift.
+DSP Report: operator lift1 is absorbed into DSP lift.
+DSP Report: operator lift2 is absorbed into DSP lift.
+DSP Report: operator lift0 is absorbed into DSP lift.
+DSP Report: Generating DSP rom_rst1, operation Mode is: (D+(A:0x3ffffff8))*(B:0x1da).
+DSP Report: operator rom_rst1 is absorbed into DSP rom_rst1.
+DSP Report: operator rom_rst2 is absorbed into DSP rom_rst1.
+DSP Report: Generating DSP rom_rst0, operation Mode is: A*(B:0x31).
+DSP Report: operator rom_rst0 is absorbed into DSP rom_rst0.
+DSP Report: Generating DSP rom_rst10, operation Mode is: A*(B:0x31).
+DSP Report: operator rom_rst10 is absorbed into DSP rom_rst10.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 580.379 ; gain = 406.266
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+ Sort Area is null rom_rst1_2 : 0 0 : 524 524 : Used 1 time 0
+ Sort Area is null rom_rst0_4 : 0 0 : 314 314 : Used 1 time 0
+ Sort Area is null rom_rst10_6 : 0 0 : 234 234 : Used 1 time 0
+ Sort Area is null lift_0 : 0 0 : 190 190 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++---------------+--------------------------------------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping                                                                                                  | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+--------------------------------------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_flyinglogo | ((EDGE:1=>(C:0x31)) or (EDGE:0=>0))+(D+((InmodeCtrl[1]:0=>0) or (InmodeCtrl[1]:1=>(A:0x3ffffff7))))*(B:0x31) | No           | 5      | 6      | 6      | 4      | 10     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|top_flyinglogo | (D+(A:0x3ffffff8))*(B:0x1da)                                                                                 | No           | 5      | 9      | 48     | 4      | 27     | 0    | 0    | 1    | 0    | 0     | 0    | 0    | 
+|top_flyinglogo | A*(B:0x31)                                                                                                   | No           | 18     | 6      | 48     | 25     | 24     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|top_flyinglogo | A*(B:0x31)                                                                                                   | No           | 13     | 6      | 48     | 25     | 19     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++---------------+--------------------------------------------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows DSPs generated at current stage. Some DSP generation could be reversed due to later optimizations. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 580.379 ; gain = 406.266
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 580.379 ; gain = 406.266
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 609.395 ; gain = 435.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 610.336 ; gain = 436.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 632.473 ; gain = 458.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 632.473 ; gain = 458.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 632.473 ; gain = 458.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 632.473 ; gain = 458.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dcm_25m       |         1|
+|2     |blk_mem_gen_1 |         1|
+|3     |blk_mem_gen_0 |         1|
+|4     |blk_mem_gen_2 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |blk_mem_gen_2 |     1|
+|4     |dcm_25m       |     1|
+|5     |BUFG          |     2|
+|6     |CARRY4        |   124|
+|7     |DSP48E1       |     1|
+|8     |DSP48E1_1     |     1|
+|9     |DSP48E1_2     |     2|
+|10    |LUT1          |   191|
+|11    |LUT2          |   176|
+|12    |LUT3          |    64|
+|13    |LUT4          |   164|
+|14    |LUT5          |   116|
+|15    |LUT6          |   143|
+|16    |FDCE          |    18|
+|17    |FDPE          |     2|
+|18    |FDRE          |   246|
+|19    |LDC           |    46|
+|20    |IBUF          |     9|
+|21    |OBUF          |    14|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |  1333|
+|2     |  b1     |button      |    57|
+|3     |    d1   |debounce_13 |    55|
+|4     |  b2     |button_0    |    61|
+|5     |    d1   |debounce_12 |    59|
+|6     |  b3     |button_1    |    58|
+|7     |    d1   |debounce_11 |    56|
+|8     |  b4     |button_2    |    75|
+|9     |    d1   |debounce_10 |    73|
+|10    |  b5     |button_3    |    58|
+|11    |    d1   |debounce_9  |    56|
+|12    |  b6     |button_4    |   146|
+|13    |    d1   |debounce_8  |   144|
+|14    |  b7     |button_5    |    68|
+|15    |    d1   |debounce_7  |    66|
+|16    |  b8     |button_6    |    56|
+|17    |    d1   |debounce    |    54|
+|18    |  u2     |vga_640x480 |   234|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 632.473 ; gain = 458.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:31 . Memory (MB): peak = 632.473 ; gain = 108.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 632.473 ; gain = 458.359
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 183 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  LDC => LDCE: 46 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 632.473 ; gain = 435.285
+# write_checkpoint -noxdef top_flyinglogo.dcp
+# catch { report_utilization -file top_flyinglogo_utilization_synth.rpt -pb top_flyinglogo_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 632.473 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 13 19:24:12 2016...

@@ -1,0 +1,58 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4.1 (win64) Build 1149489 Thu Feb 19 16:23:09 MST 2015
+| Date         : Wed Jun 08 19:10:32 2016
+| Host         : BILLLINC3DA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_gen_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of blk_mem_gen_1 (xilinx.com:ip:blk_mem_gen:8.2 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4.1 (win64) Build 1149489 Thu Feb 19 16:23:09 MST 2015
+| Date         : Sun Jun 05 20:11:07 2016
+| Host         : BILLLINC3DA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_gen_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of blk_mem_gen_1 (xilinx.com:ip:blk_mem_gen:8.2 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4.1 (win64) Build 1149489 Thu Feb 19 16:23:09 MST 2015
+| Date         : Sun Jun 05 20:02:25 2016
+| Host         : BILLLINC3DA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35ticpg236-1L
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_gen_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of blk_mem_gen_1 (xilinx.com:ip:blk_mem_gen:8.2 (Rev. 4)) to current project options.
+

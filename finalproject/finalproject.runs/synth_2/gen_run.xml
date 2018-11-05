@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1467350760">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_2/constrs_in.xml"/>
+  <File Type="RDS-DCP" Name="top_top.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_2/sources.xml"/>
+  <File Type="RDS-UTIL-PB" Name="top_top_utilization_synth.pb"/>
+  <File Type="VDS-HWDEF" Name="top_top.hwdef"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_2/synth_2.psg"/>
+  <File Type="RDS-RDS" Name="top_top.vds"/>
+  <File Type="PA-TCL" Name="top_top.tcl"/>
+  <File Type="RDS-UTIL" Name="top_top_utilization_synth.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="//Mac/Home/Desktop/v/1/project_button/project_button.srcs/sources_1/new/debounce.v"/>
+        <Attr Name="ImportTime" Val="1460080442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/debounce.v"/>
+        <Attr Name="ImportTime" Val="1464605486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1/31767676VGA_flyinglogo/sources/vga_timing.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../31767676VGA_flyinglogo/sources/vga_timing.v"/>
+        <Attr Name="ImportTime" Val="1352301890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/Sound_Gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/Sound_Gen.v"/>
+        <Attr Name="ImportTime" Val="1464607680"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/Move.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/Move.v"/>
+        <Attr Name="ImportTime" Val="1467350758"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/FSM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/FSM.v"/>
+        <Attr Name="ImportTime" Val="1467349718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/button.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="//Mac/Home/Desktop/v/1/project_button/project_button.srcs/sources_1/new/button.v"/>
+        <Attr Name="ImportTime" Val="1461153519"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../31767676VGA_flyinglogo/sources/top_flyinglogo.v"/>
+        <Attr Name="ImportTime" Val="1460702104"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/Top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/Top.v"/>
+        <Attr Name="ImportTime" Val="1467349888"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/new/top_top.v"/>
+        <Attr Name="ImportTime" Val="1467349892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/dcm_25m/dcm_25m.upgrade_log">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/ip/dcm_25m/dcm_25m.upgrade_log"/>
+        <Attr Name="ImportTime" Val="1460692332"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/logo_rom/logo_rom.upgrade_log">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/ip/logo_rom/logo_rom.upgrade_log"/>
+        <Attr Name="ImportTime" Val="1460692398"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1/project_vga_logo/coe/elements.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/elements.coe"/>
+        <Attr Name="ImportTime" Val="1460692847"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/elements.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/elements.coe"/>
+        <Attr Name="ImportTime" Val="1460725814"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/elements123.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/elements123.coe"/>
+        <Attr Name="ImportTime" Val="1460727952"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/image1.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/image1.coe"/>
+        <Attr Name="ImportTime" Val="1460816574"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/12.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/12.coe"/>
+        <Attr Name="ImportTime" Val="1460894006"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/11.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/11.coe"/>
+        <Attr Name="ImportTime" Val="1460894070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/1.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/1.coe"/>
+        <Attr Name="ImportTime" Val="1465983610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci3.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci3.coe"/>
+        <Attr Name="ImportTime" Val="1463406806"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci4.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci4.coe"/>
+        <Attr Name="ImportTime" Val="1463394444"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/yinfu.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/yinfu.coe"/>
+        <Attr Name="ImportTime" Val="1464003108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/zhihsi.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/zhihsi.coe"/>
+        <Attr Name="ImportTime" Val="1464003794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci4gai.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci4gai.coe"/>
+        <Attr Name="ImportTime" Val="1464778520"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci3gai.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci3gai.coe"/>
+        <Attr Name="ImportTime" Val="1464778472"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci4gai2.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci4gai2.coe"/>
+        <Attr Name="ImportTime" Val="1464914136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci3gai2.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci3gai2.coe"/>
+        <Attr Name="ImportTime" Val="1464914174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci3gai3.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci3gai3.coe"/>
+        <Attr Name="ImportTime" Val="1464940650"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci4gai3.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci4gai3.coe"/>
+        <Attr Name="ImportTime" Val="1464940998"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.upgrade_log">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.upgrade_log"/>
+        <Attr Name="ImportTime" Val="1465384232"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci4gai4.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci4gai4.coe"/>
+        <Attr Name="ImportTime" Val="1465383934"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/geci3gai4.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/geci3gai4.coe"/>
+        <Attr Name="ImportTime" Val="1465384032"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/2.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/2.coe"/>
+        <Attr Name="ImportTime" Val="1465983616"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/coe/3.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/coe/3.coe"/>
+        <Attr Name="ImportTime" Val="1465983630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_display_module/project_vga_logo.srcs/sources_1/bt.v"/>
+        <Attr Name="ImportTime" Val="1464606144"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/sources/display_vga.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../31767676VGA_flyinglogo/sources/display_vga.xdc"/>
+        <Attr Name="ImportTime" Val="1411715698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/sources/display_vga.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dcm_25m"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_5"/>
+</GenRun>

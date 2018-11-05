@@ -1,0 +1,16 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4.1 (win64) Build 1149489 Thu Feb 19 16:23:09 MST 2015
+| Date         : Fri Apr 15 11:52:12 2016
+| Host         : BILLLINC3DA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dcm_25m'
+
+1. Summary
+----------
+
+SUCCESS in the update of dcm_25m (xilinx.com:ip:clk_wiz:5.1 (Rev. 5)) to current project options.
+

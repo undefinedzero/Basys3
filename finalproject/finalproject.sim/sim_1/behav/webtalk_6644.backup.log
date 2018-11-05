@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Sun Apr 17 21:42:50 2016
+# Process ID: 7664
+# Log file: C:/Xilinx/1/project_vga_logo/project_vga_logo.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Xilinx/1/project_vga_logo/project_vga_logo.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Xilinx/1/project_vga_logo/project_vga_logo.sim/sim_1/behav/xsim.dir/sim_logo_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 95.766 ; gain = 0.004
+
+    while executing
+"webtalk_transmit -clientid 2569654539 -regid "" -xml C:/Xilinx/1/project_vga_logo/project_vga_logo.sim/sim_1/behav/xsim.dir/sim_logo_behav/webtalk/usa..."
+    (file "C:/Xilinx/1/project_vga_logo/project_vga_logo.sim/sim_1/behav/xsim.dir/sim_logo_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 17 21:42:56 2016...

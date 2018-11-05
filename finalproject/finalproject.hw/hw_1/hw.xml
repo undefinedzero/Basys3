@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hwsession version="1" minor="1">
+  <device name="xc7a35t_0" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="E:/vivadosu/Vivado/2014.4/data/xicom/cfgmem/bitfile/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="E:/vivadosu/Vivado/2014.4/data/xicom/cfgmem/bitfile/spi_xc7a35t_pullnone.bit"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

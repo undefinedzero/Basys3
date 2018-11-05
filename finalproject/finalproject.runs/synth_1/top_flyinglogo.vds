@@ -1,0 +1,386 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:23:09 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Fri Apr 15 11:38:02 2016
+# Process ID: 10796
+# Log file: C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/top_flyinglogo.vds
+# Journal file: C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_flyinglogo.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35ticpg236-1L
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Xilinx/1/project_vga_logo/project_vga_logo.cache/wt [current_project]
+# set_property parent.project_path C:/Xilinx/1/project_vga_logo/project_vga_logo.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files c:/Xilinx/1/31767676VGA_flyinglogo/elements.coe
+# add_files c:/Xilinx/1/31767676VGA_flyinglogo/coe/test7.coe
+# add_files -quiet C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/dcm_25m_synth_1/dcm_25m.dcp
+# set_property used_in_implementation false [get_files C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/dcm_25m_synth_1/dcm_25m.dcp]
+# add_files -quiet C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/logo_rom_synth_1/logo_rom.dcp
+# set_property used_in_implementation false [get_files C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/logo_rom_synth_1/logo_rom.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Xilinx/1/31767676VGA_flyinglogo/sources/debounce.v
+#   C:/Xilinx/1/31767676VGA_flyinglogo/sources/vga_timing.v
+#   C:/Xilinx/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v
+# }
+# read_xdc C:/Xilinx/1/31767676VGA_flyinglogo/sources/display_vga.xdc
+# set_property used_in_implementation false [get_files C:/Xilinx/1/31767676VGA_flyinglogo/sources/display_vga.xdc]
+# catch { write_hwdef -file top_flyinglogo.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top_flyinglogo -part xc7a35ticpg236-1L
+Command: synth_design -top top_flyinglogo -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 241.168 ; gain = 48.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_flyinglogo' [C:/Xilinx/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:4]
+	Parameter logo_length bound to: 10'b0010101001 
+	Parameter logo_hight bound to: 10'b0001001110 
+INFO: [Synth 8-638] synthesizing module 'dcm_25m' [C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/.Xil/Vivado-10796-BILLLINC3DA/realtime/dcm_25m_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dcm_25m' (1#1) [C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/.Xil/Vivado-10796-BILLLINC3DA/realtime/dcm_25m_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'logo_rom' [C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/.Xil/Vivado-10796-BILLLINC3DA/realtime/logo_rom_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'logo_rom' (2#1) [C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/.Xil/Vivado-10796-BILLLINC3DA/realtime/logo_rom_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [C:/Xilinx/1/31767676VGA_flyinglogo/sources/vga_timing.v:4]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (3#1) [C:/Xilinx/1/31767676VGA_flyinglogo/sources/vga_timing.v:4]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Xilinx/1/31767676VGA_flyinglogo/sources/debounce.v:3]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (4#1) [C:/Xilinx/1/31767676VGA_flyinglogo/sources/debounce.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:183]
+INFO: [Synth 8-256] done synthesizing module 'top_flyinglogo' (5#1) [C:/Xilinx/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 275.293 ; gain = 82.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 275.293 ; gain = 82.816
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35ti/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/.Xil/Vivado-10796-BILLLINC3DA/dcp/dcm_25m_in_context.xdc] for cell 'u0'
+Finished Parsing XDC File [C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/.Xil/Vivado-10796-BILLLINC3DA/dcp/dcm_25m_in_context.xdc] for cell 'u0'
+Parsing XDC File [C:/Xilinx/1/31767676VGA_flyinglogo/sources/display_vga.xdc]
+Finished Parsing XDC File [C:/Xilinx/1/31767676VGA_flyinglogo/sources/display_vga.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 570.422 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Xilinx/1/project_vga_logo/project_vga_logo.runs/synth_1/.Xil/Vivado-10796-BILLLINC3DA/dcp/dcm_25m_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+ROM "y_cnt" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Xilinx/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:183]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Xilinx/1/31767676VGA_flyinglogo/sources/top_flyinglogo.v:183]
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_flyinglogo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "u2/y_cnt" won't be mapped to RAM because it is too sparse.
+ROM "rom_addr" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 570.422 ; gain = 377.945
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\speed_cnt_reg[7] ) is unused and will be removed from module top_flyinglogo.
+WARNING: [Synth 8-3332] Sequential element (\speed_cnt_reg[6] ) is unused and will be removed from module top_flyinglogo.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 570.422 ; gain = 377.945
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dcm_25m       |         1|
+|2     |logo_rom      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |dcm_25m  |     1|
+|2     |logo_rom |     1|
+|3     |CARRY4   |    18|
+|4     |LUT1     |    21|
+|5     |LUT2     |    27|
+|6     |LUT3     |    17|
+|7     |LUT4     |    24|
+|8     |LUT5     |    42|
+|9     |LUT6     |    71|
+|10    |FDCE     |     9|
+|11    |FDPE     |     1|
+|12    |FDRE     |    56|
+|13    |FDSE     |    11|
+|14    |IBUF     |     1|
+|15    |OBUF     |    14|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   325|
+|2     |  u2     |vga_640x480 |   162|
+|3     |  u3     |debounce    |     4|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 570.422 ; gain = 377.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 570.422 ; gain = 56.801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 570.422 ; gain = 377.945
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 570.422 ; gain = 373.355
+# write_checkpoint -noxdef top_flyinglogo.dcp
+# catch { report_utilization -file top_flyinglogo_utilization_synth.rpt -pb top_flyinglogo_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 570.422 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 11:38:37 2016...

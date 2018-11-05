@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4.1 (64-bit)
+# SW Build 1149489 on Thu Feb 19 16:20:35 MST 2015
+# IP Build 1147552 on Wed Feb 18 14:25:16 MST 2015
+# Start of session at: Fri Jul 01 00:24:41 2016
+# Process ID: 5060
+# Log file: F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/impl_2/top_top.vdi
+# Journal file: F:/vivadoproject/Project/project_display_module/project_vga_logo.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source top_top.tcl -notrace
